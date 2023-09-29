@@ -1,0 +1,2 @@
+- Refactor deletion functions with code reuse
+- Test running multiple deletion flags

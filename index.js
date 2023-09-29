@@ -9,7 +9,6 @@
 
 const fs = require('fs');
 const axios = require('axios');
-const { log } = require('console');
 const timers = require('timers/promises');
 
 require('dotenv').config();
@@ -332,10 +331,10 @@ const sortApplication = (app) => {
   }
 };
 
-const deleteAllNotInUseApplications = async (includeLicensed = false) => {
+const deleteAllNotInUseApplications = async (includePurchased = false) => {
   deleteUnlicensedApplications();
   deleteLicensedUnpurchasedApplications();
-  if (includeLicensed) {
+  if (includePurchased) {
     deleteLicensedPurchasedNotInUseApplications();
   }
 };
