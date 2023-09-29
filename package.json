@@ -1,0 +1,16 @@
+{
+  "name": "ios-trim-applications-list",
+  "version": "1.0.0",
+  "description": "Remove mobile device applications from Jamf instance",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jared Hodgkins",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.5.1",
+    "dotenv": "^16.3.1"
+  }
+}
